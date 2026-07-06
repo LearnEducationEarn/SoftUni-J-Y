@@ -1,0 +1,9 @@
+number  = float(input())
+
+const_inch_centimeter = 2.54
+
+result = number * const_inch_centimeter
+
+print(result)
+
+
