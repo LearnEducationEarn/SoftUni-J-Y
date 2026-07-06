@@ -1,0 +1,8 @@
+height = int(input())
+length = int(input())
+
+area = height * length
+
+print(area)
+
+
