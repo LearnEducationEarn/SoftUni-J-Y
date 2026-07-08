@@ -1,0 +1,7 @@
+name = input()
+
+print("Hello, ", end="")     # when using end='' keeps the cursor on the same line! / Prevents moving to a new line
+print(name, end='')
+print("!")
+
+
