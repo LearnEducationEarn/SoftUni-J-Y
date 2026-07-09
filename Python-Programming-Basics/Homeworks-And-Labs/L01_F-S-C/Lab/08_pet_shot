@@ -1,0 +1,10 @@
+count_packages_for_dogs = int(input())
+count_packages_for_cats = int(input())
+
+price_per_package_for_dogs = 2.50
+price_per_package_for_cats = 4
+
+total_sum = (count_packages_for_dogs * price_per_package_for_dogs) + (count_packages_for_cats * price_per_package_for_cats)
+
+print(f"{total_sum} lv.")
+
