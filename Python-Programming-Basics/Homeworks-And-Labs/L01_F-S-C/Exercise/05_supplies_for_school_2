@@ -1,0 +1,16 @@
+count_package_pen = int(input())
+count_package_highlighters = int(input())
+cleaning_agent_in_litters = int(input())
+discount = int(input()) / 100
+
+pen_package = 5.80
+package_highlighters = 7.20
+cleaning_agent_per_litter = 1.20
+
+
+total = (count_package_pen * pen_package) + (count_package_highlighters * package_highlighters) + (cleaning_agent_in_litters * cleaning_agent_per_litter)
+
+total -= (total * discount)
+
+print(total)
+
