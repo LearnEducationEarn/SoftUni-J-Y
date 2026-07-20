@@ -1,1 +1,23 @@
+count_chicken_menus = int(input())
+count_fish_menus = int(input())
+count_vegetarian_menus = int(input())
+
+CHICKEN_MENU_PRICE = 10.35
+FISH_MENU_PRICE = 12.40
+VEGETARIAN_MENU_PRICE = 8.15
+
+DELIVERY_PRICE = 2.50
+DESERT_PERCENT = 0.20
+
+food_sum = ((count_chicken_menus * CHICKEN_MENU_PRICE)
+            + (count_fish_menus * FISH_MENU_PRICE)
+            + (count_vegetarian_menus * VEGETARIAN_MENU_PRICE))
+
+desert = food_sum * DESERT_PERCENT
+
+total = food_sum + desert + DELIVERY_PRICE
+
+print(total)
+
+
 
