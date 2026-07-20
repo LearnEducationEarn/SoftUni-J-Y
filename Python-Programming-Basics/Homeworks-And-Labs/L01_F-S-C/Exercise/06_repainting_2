@@ -1,1 +1,23 @@
+NYLON_PRICE = 1.50
+PAINT_PRICE = 14.50
+THINNER_PRICE = 5.00
+BAGS = 0.40
+
+needed_quantity_nylon_square_meters = int(input())
+needed_quantity_paint_litter = int(input())
+quantity_thinner_litter = int(input())
+hours = int(input())
+
+needed_quantity_nylon_square_meters += 2
+needed_quantity_paint_litter += (needed_quantity_paint_litter * 0.10)
+
+total_for_materials = ((needed_quantity_nylon_square_meters * NYLON_PRICE) +
+                       (needed_quantity_paint_litter * PAINT_PRICE) +
+                       (quantity_thinner_litter * THINNER_PRICE) + BAGS)
+
+workers_price = (total_for_materials * 0.30) * hours
+
+total = total_for_materials + workers_price
+
+print(total)
 
