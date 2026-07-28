@@ -1,0 +1,16 @@
+first_time = int(input())
+seconds_time = int(input())
+third_time = int(input())
+
+sum_seconds = first_time + seconds_time + third_time
+
+time_in_minutes = sum_seconds // 60
+time_in_seconds = sum_seconds % 60
+
+if time_in_seconds < 10:
+
+    print(f"{time_in_minutes}:0{time_in_seconds}")
+
+else:
+
+    print(f"{time_in_minutes}:{time_in_seconds}")
